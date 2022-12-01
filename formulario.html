@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table td {
+         width: 250px;
+        }
+
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>FORMULARIO DE INSCRIPCION</h1>
+    <H2>CESDE-COMFAMA</H2>
+    </center>
+    
+    <main>
+        
+        <!--aqui va la etiqueta legend,tal vez pienso que es por que la que cierra la etiqueta esta demaciado abajo-->
+        
+        <fieldset>
+        <legend>Datos del estudiante</legend>
+           
+        <!--aqui empieza la tabla-->
+        <table>
+          
+        <!--aqui van los primeros datos-->
+       <tr>
+         <td>
+          <label for="">Identificacion</label>
+          <input type="number" name="Identificacion" id="Identificacion" placeholder="Obligatorio max(17)Nros"> <br> 
+         </td>
+         <td>
+          <label for="">Fecha de nacimiento*</label>
+          <input type="date" name="Fecha de nacimiento" id="Fecha de nacimiento" placeholder=""> <br> 
+        </td>
+        <td rowspan="5">
+            <fieldset>
+                <legend class="legend1">Tiempo libre:</legend>
+                <input type="checkbox" name="tiempoLibre" value="Estudio">Estudio</br>
+                <input type="checkbox" name="tiempoLibre" value="Deportes">Deportes</br>
+                <input type="checkbox" name="tiempoLibre" value="Redes Sociales">Redes Sociales</br>
+                <input type="checkbox" name="tiempoLibre" value="Musica">Musica</br>
+                <input type="checkbox" name="tiempoLibre" value="Video Juegos">Video Juegos</br>
+                    
+            </fieldset>
+        </td>
+       </tr>
+
+         <!--sigue con los 2 datos-->
+
+
+     <tr>
+     <td>
+         <label for="">Apellidos</label>
+         <input type="text" name="Apellidos" id="Apellidos" placeholder="Obligatorio max (20)letras"> <br> 
+     </td>
+     <td>
+         <label for="">Edad</label>
+         <input type="number" name="Edad" id="Edad"> <br> 
+     </td>
+    </tr>
+     
+    
+    <!--3 datos-->
+
+    <tr>
+        <td>
+            <label for="">Nombre</label>
+            <input type="text" name="Nombre" id="Nombre" placeholder="Obligatorio max(20)letras"> <br> 
+        </td>
+        <td>
+            <label for="">Mes nacimiento</label>
+            <input type="month" name="Mes nacimiento" id="Mes nacimiento"> <br>
+        </td>
+    </tr>
+
+     
+    <!--4 datos-->
+    <tr>
+        <td>
+            <label for="">Correo</label>
+            <input type="email" name="Correo" id="Correo"> <br> 
+        </td>
+    
+            <td><label for="">Genero</label>
+            <input type="radio" name="Genero" id="Masculino">Masculino  
+            <input type="radio" name="Genero" id="Femenino">Femenino <br> 
+         </td>
+    </tr>
+
+    
+    <!--5 datos y este va con lista despegable-->
+    <tr>
+        <td>
+            <label for="">Celular</label>
+            <input type="number" name="Celular" id="Celular" placeholder="###-###-##-##"> <br> 
+        </td>
+        <td>
+            <label for="">Comuna(*Barrios*)</label>
+            <select name="Comuna">
+                <option value="Comuna 1">Comuna 1</option>
+                <option value="Comuna 2">Comuna 2</option>
+                <option value="Comuna 3">Comuna 3</option>
+                <option value="Comuna 4">Comuna 4</option>
+
+            </select>
+        </td>
+    </tr>
+
+          </table>
+    </fieldset>
+
+   
+    <!--AQUI TENGO QUE INSERTAR OTRA ETIQUETA TABLA Y HACER LISTAS DESPEGABLES-->
+      <center>
+        <h1>***SELECCIONAR LAS MATERIAS DEL SEMESTRE***</h1>
+      </center>
+    <table>
+        <tr>
+            <td>
+                <h3>MATERIAS</h3>
+            </td>
+            <td>
+                <h3>Nro creditos</h3>
+            </td>
+            <td>
+                <h3>Vlr 1 credito</h3>
+            </td>
+            <td>
+                <h3>Subtotal</h3>
+            </td>
+            <td>
+                <h3>Horario</h3>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <select name="Elija una opcion" id="">
+                    <option value="Elija una opcion">Elija una opcion</option>
+                    <option value="Materia 1">Materia 1</option>
+                    <option value="Materia 2">Materia 2</option>
+                    <option value="Materia 3">Materia 3</option>
+                    <option value="Materia 4">Materia 4</option>
+                    <option value="Materia 5">Materia 5</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" name="Nro creditos" id="Nro creditos">
+            </td>
+            <td>
+                <input type="number" name="Vlr 1 credito" id="Vlr 1 credito" placeholder="Valor Credito">
+            </td>
+            <td>
+                <input type="text" name="Subtotal">
+            </td>
+            <td>
+                <select name="Elija una opcion" id="">
+                    <option value="Elija una opcion">Elija una opcion</option>
+                    <option value="Horario 1">Horario 1</option>
+                    <option value="Horario 2">Horario 2</option>
+                    <option value="Horario 3">Horario 3</option>
+                    <option value="Horario 4">Horario 4</option>
+                    <option value="Horario 5">Horario 5</option>
+                </select>
+            </td>
+            <td>
+                <input type="button" value="Calcular">
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td>
+                <select name="Elija una opcion" id="">
+                    <option value="Elija una opcion">Elija una opcion</option>
+                    <option value="Materia 1">Materia 1</option>
+                    <option value="Materia 2">Materia 2</option>
+                    <option value="Materia 3">Materia 3</option>
+                    <option value="Materia 4">Materia 4</option>
+                    <option value="Materia 5">Materia 5</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" name="Nro creditos" id="Nro creditos">
+            </td>
+            <td>
+                <input type="number" name="Vlr 1 credito" id="Vlr 1 credito" placeholder="Valor Credito">
+            </td>
+            <td>
+                <input type="text" name="Subtotal">
+            </td>
+            <td>
+                <select name="Elija una opcion" id="">
+                    <option value="Elija una opcion">Elija una opcion</option>
+                    <option value="Horario 1">Horario 1</option>
+                    <option value="Horario 2">Horario 2</option>
+                    <option value="Horario 3">Horario 3</option>
+                    <option value="Horario 4">Horario 4</option>
+                    <option value="Horario 5">Horario 5</option>
+                </select>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <select name="Elija una opcion" id="">
+                    <option value="Elija una opcion">Elija una opcion</option>
+                    <option value="Materia 1">Materia 1</option>
+                    <option value="Materia 2">Materia 2</option>
+                    <option value="Materia 3">Materia 3</option>
+                    <option value="Materia 4">Materia 4</option>
+                    <option value="Materia 5">Materia 5</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" name="Nro creditos" id="Nro creditos">
+            </td>
+            <td>
+                <input type="number" name="Vlr 1 credito" id="Vlr 1 credito" placeholder="Valor Credito">
+            </td>
+            <td>
+                <input type="text" name="Subtotal">
+            </td>
+            <td>
+                <select name="Elija una opcion" id="">
+                    <option value="Elija una opcion">Elija una opcion</option>
+                    <option value="Horario 1">Horario 1</option>
+                    <option value="Horario 2">Horario 2</option>
+                    <option value="Horario 3">Horario 3</option>
+                    <option value="Horario 4">Horario 4</option>
+                    <option value="Horario 5">Horario 5</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <select name="Elija una opcion" id="">
+                    <option value="Elija una opcion">Elija una opcion</option>
+                    <option value="Materia 1">Materia 1</option>
+                    <option value="Materia 2">Materia 2</option>
+                    <option value="Materia 3">Materia 3</option>
+                    <option value="Materia 4">Materia 4</option>
+                    <option value="Materia 5">Materia 5</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" name="Nro creditos" id="Nro creditos">
+            </td>
+            <td>
+                <input type="number" name="Vlr 1 credito" id="Vlr 1 credito" placeholder="Valor Credito">
+            </td>
+            <td>
+                <input type="text" name="Subtotal">
+            </td>
+            <td>
+                <select name="Elija una opcion" id="">
+                    <option value="Elija una opcion">Elija una opcion</option>
+                    <option value="Horario 1">Horario 1</option>
+                    <option value="Horario 2">Horario 2</option>
+                    <option value="Horario 3">Horario 3</option>
+                    <option value="Horario 4">Horario 4</option>
+                    <option value="Horario 5">Horario 5</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <select name="Elija una opcion" id="">
+                    <option value="Elija una opcion">Elija una opcion</option>
+                    <option value="Materia 1">Materia 1</option>
+                    <option value="Materia 2">Materia 2</option>
+                    <option value="Materia 3">Materia 3</option>
+                    <option value="Materia 4">Materia 4</option>
+                    <option value="Materia 5">Materia 5</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" name="Nro creditos" id="Nro creditos">
+            </td>
+            <td>
+                <input type="number" name="Vlr 1 credito" id="Vlr 1 credito" placeholder="Valor Credito">
+            </td>
+            <td>
+                <input type="text" name="Subtotal">
+            </td>
+            <td>
+                <select name="Elija una opcion" id="">
+                    <option value="Elija una opcion">Elija una opcion</option>
+                    <option value="Horario 1">Horario 1</option>
+                    <option value="Horario 2">Horario 2</option>
+                    <option value="Horario 3">Horario 3</option>
+                    <option value="Horario 4">Horario 4</option>
+                    <option value="Horario 5">Horario 5</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</main>
+</body>
+</html>                                 
